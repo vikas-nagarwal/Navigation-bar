@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: auto;
+        height: auto;
+        width: auto;
+      }
+      ul {
+        column-gap: 15px;
+        margin-right: 160px;
+        margin-top: 10px;
+        float: right;
+        display: inline-flex;
+        padding: 0;
+        /* margin: 0; */
+      }
+      ul li {
+        position: relative;
+        padding: 10px;
+        list-style-type: none;
+      }
+      .dots {
+        top: 42px;
+        left: 0;
+        background: chartreuse;
+        /* padding: 20px; */
+        margin: 0;
+        position: absolute;
+
+        display: none;
+      }
+
+      .hello:hover .dots {
+        color: black;
+        display: block;
+      }
+      .ulservice_section {
+        display: none;
+        float: left;
+        top: -12px;
+        background-color: chartreuse;
+        margin-left: 108px;
+        position: absolute;
+      }
+      .service_Section:hover .ulservice_section {
+        /* float: left; */
+        display: block;
+        color: black;
+      }
+      nav {
+        width: 100%;
+        height: 60px;
+        background-color: chartreuse;
+      }
+      ul li {
+        font-size: 20px;
+      }
+      ul li:hover {
+        background-color: white;
+        color: blueviolet;
+      }
+      .dataanalysis {
+        display: none;
+      }
+
+      .analysis:hover .dataanalysis {
+        display: block;
+      }
+      .dataanalysis {
+        display: none;
+        float: left;
+        top: -10px;
+        background-color: chartreuse;
+        margin-left: 80px;
+        color: black;
+        position: absolute;
+      }
+      img {
+        margin-top: 25px;
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="" alt="logo" />
+      <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li class="hello">
+          about
+          <ul class="dots">
+            <li>Home</li>
+            <li>Data</li>
+            <li class="service_Section">
+              Service
+              <ul class="ulservice_section">
+                <li>Android</li>
+                <li>Software</li>
+                <li>Data</li>
+                <li class="analysis">
+                  Analysi
+
+                  <ul class="dataanalysis">
+                    <li>cloub</li>
+                    <li>computing</li>
+                    <li>google</li>
+                    <li>yahoo</li>
+                    <li>meta</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Testomonial</li>
+          </ul>
+        </li>
+        <li>contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>
